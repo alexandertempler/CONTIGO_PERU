@@ -1,0 +1,774 @@
+* {
+  box-sizing: border-box;
+}
+/* Style the body */
+body {
+  font-family: Arial;
+  margin: 0;
+}
+/* Header/logo Title */
+
+.header {
+  transition: 1s;
+  background-image: url(images/head/02-resturante-mesa.jpg);
+  background-size: cover;
+  width: auto;
+  height: 400px;
+  max-height: 400px;
+}
+.header:hover {
+	transition: 1s;
+	background-image: url(images/head/02-restaurante-pollo_brasa.jpg);
+}
+.header_img {
+	width: 100%;
+	display: block;
+margin:auto ;
+padding-top: 80px;
+max-width: 30%;
+min-width: 300px;
+}
+.footer_logo_img {
+	width: 100%;
+	display: block;
+margin:auto ;
+	max-width: 30%;
+min-width: 200px;
+}
+
+/* Style the top navigation bar */
+.navbar {
+  display: flex;
+  background-color: rgb(209, 23, 23);
+}
+.nav_principal {
+	background-color: rgb(219, 219, 219);	
+	color: rgb(209, 23, 23);
+}
+.nav_secundario {
+	color: white;
+	background-color: rgb(209, 23, 23);
+}
+
+/* Style the navigation bar links */
+.navbar a {
+  padding: 14px 20px;
+  text-decoration: none;
+  text-align: center;
+}
+
+/* Change color on hover */
+.navbar a:hover {
+  background-color: rgb(219, 219, 219);
+  color: rgb(209, 23, 23);
+  text-decoration-line:underline;
+}
+.nav_principal {
+	background-color: rgb(219, 219, 219);	
+}
+/* Column container */
+.row {  
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Página index*/
+
+.peruanisimo { 
+	text-align: center;
+	transition: 1s;
+	background-image: url(images/index/03-restaurante-comida_variada.jpg);
+	height: 200px;
+	width: 100%;
+}
+.peruanisimo:hover {
+	transition: 1s;
+background-image: url(images/index/03-restaurante-ceviche_simple.jpg);
+}
+.peruanisimo img {
+	width: 100%;
+	display: block;
+margin:auto ;
+padding-top: 60px;
+max-width: 30%;
+min-width: 300px;
+}
+/*Acerca de nosotros*/
+.nosotros {
+	display: flex;
+}
+.nosotros div {
+	margin-top: 20px;
+}
+
+.txt_nosotros {
+	border-width: 1px;
+	border-color: black;
+	border-style:groove;
+	width: 50%;
+	height: 500px;
+	overflow:scroll;
+}
+.txt_nosotros h2, .txt_nosotros h3 {
+	text-align: center;
+	color: #8a2220;
+}
+
+.txt_nosotros::-webkit-scrollbar {
+      width: 0px;
+}
+.txt_nosotros p {
+	padding-left: 5px;
+	font-size: 18px;
+	color: #8a2220;
+}
+.img_nosotros {
+	transition: 1s;
+	margin-left:20px;
+	background-image: url(images/index/04-restaurante-bar_man.jpg);
+	background-size: cover;
+	display: block;
+	width: 50%;
+	height: 500px;
+}
+.img_nosotros:hover {
+	transition: 1s;
+	background-image: url(images/index/04-restaurante-lomo_fino.jpeg)
+}
+/*Opcion Regiones*/
+.txt_regiones {
+	color: #D71921;
+	text-align: center;
+}
+
+.flecha_abajo {
+	margin-bottom: 30px;
+}
+.img_regiones {
+	background-image: 
+	linear-gradient(
+		rgba(255, 0, 0, 0.6), 
+      rgba(255, 0, 0, 0.6)
+    ),
+	url(images/index/05-restaurante-platos_regiones.jpg);
+	width:auto;
+	height: 200px;
+	padding-top: 70px;
+	padding-left: 110px;
+}
+.sierra {
+	padding-left: 210px;
+}
+.selva {
+	padding-left: 210px;
+}
+.img_regiones :hover {
+	-webkit-transform: scale(1.1);
+    transform: scale(1.1)
+}
+/*Contacto*/
+.contacto {
+	transition: 1s;
+	display: flex;
+	margin-top: 20px;
+}
+.contacto ul {
+	margin: 0px;
+	width: 100%;
+	padding: 5%;
+}
+.contacto li {
+	list-style: none;
+	margin-left: 15px;
+	padding: 0px;
+	margin: 0px;
+}
+.contacto h1 {
+	text-align: center;
+	color: red;
+}
+.contacto a {
+	text-decoration: none;
+}
+/*locales Contacto*/
+.img-contacto-el_quinde {
+	transition: 1s;
+	background-image: url(images/sede/06-restaurante-el_quinde_zona_1.jpg);
+	background-size: cover;
+}
+.img-contacto-plaza_cajamarca {
+	transition: 1s;
+	background-image: url(images/sede/06-restaurante-plaza_cajamarca_zona_1.jpg);
+	background-size: cover;
+}
+.img-contacto-el_quinde,.img-contacto-plaza_cajamarca {
+	text-align: center;
+	display: block;
+	width: 100%;
+	height: 300px;
+	margin-bottom: 20px;
+	border-radius: 10px;
+}
+.img-contacto-el_quinde h2, .img-contacto-el_quinde p,.img-contacto-plaza_cajamarca h2,.img-contacto-plaza_cajamarca p{
+	color: white;
+	background-color: rgba(214, 40, 10, 0.651);
+	margin:0;
+	padding:0;
+	border-radius: 10px;
+}
+.img-contacto-el_quinde:hover {
+	transition: 1s;
+	background-image: url(images/sede/06-restaurante-el_quinde_zona_2.jpg);
+}
+.img-contacto-plaza_cajamarca:hover {
+	transition: 1s;
+	background-image: url(images/sede/06-restaurante-plaza_cajamarca_zona_2.jpg);
+}
+/* Formulario Contacto*/
+.formulario {
+	width: auto;
+	display:inline-block;
+	flex-direction: column;
+	margin-left: 25%;
+	margin-bottom: 15px;
+}
+.formulario h3 {
+	margin-left: 2%;
+	color: rgb(209, 23, 23);
+}
+.input_content, .formulario select,textarea {
+	width: 100%;
+	height: 40px;
+	border-radius: 20px;
+    background-color: #0000001f;
+    color: #333;
+    box-shadow: inset -2px 2px 6px 2px #00000040;
+}
+.formulario textarea {
+	width: 200%;
+}
+.button_formulario {
+	background-color: rgba(255, 0, 0, 0.801);
+	color: white;
+	padding: 3%;
+	border-radius: 15px;
+	text-decoration: none;
+	margin-left: 20%;
+	margin-bottom: 3%;
+}
+.formulario a:hover {
+	padding: 20px;
+}
+textarea {
+	border: #051F00 solid 1px;
+	padding: 5px;
+	width: auto;
+	max-width: 100%;
+	margin: 0 0 5px 0;
+	resize: vertical;
+	height: 300px;
+	min-height: 300px;
+	font-family: Arial;
+	font-size: 0.85em;
+}
+/*Pagina Reservaciones*/
+.side {
+	color: #820002;
+
+}
+.side h1 {
+	margin-top: 25px;
+	margin-bottom: 0px;
+	text-align: center;
+	font-size: 45px;
+}
+.side img {
+	margin-top: 0px;
+	margin-bottom: 30px;
+	margin-left: 15px;
+	text-align: center;
+	padding: 0px;
+}
+.side h2 {
+	margin: 0px;
+	font-size: 30px;
+	padding-left: 5px;
+}
+.side h3 {
+	padding-left: 10px;
+	font-size: 25px;
+}
+.side div {
+	margin-top: 30px;
+}
+.side div h3 {
+	margin:0px;
+}
+.side div img {
+	box-shadow: 4px 4px 5px rgb(83, 83, 83);
+	padding: 0px;
+	border-radius: 15px;
+}
+.img-side-logo_cartel {
+	width: 350px;
+}
+.disfruta_menu {
+	background-image: url(images/about/03-restaurante-ceviche_mixto.jpg);
+}
+.un_lugar {
+	margin-top: 15px;
+	background-image: url(images/about/05-restaurante-tortilla.jpg);
+}
+.disfruta_menu, .un_lugar {
+	transition: 1s;
+	width: 100%; 
+	text-align: center;
+	color: rgb(250, 0, 0);
+	display:inline-block;
+	border-radius: 10px;
+}
+.disfruta_menu h1, .un_lugar h1{
+	margin-top: 45px;
+	margin-bottom: 0px;
+	padding: 0px;
+	font-size: 50px;
+}
+.disfruta_menu h3, .un_lugar h3 {
+	margin: 0px;
+	padding: 0px;
+	font-size: 20px;
+}
+.disfruta_menu:hover {
+	background-image: url(images/about/03-restaurante-arroz_con_marisco.jpg);
+}
+.un_lugar:hover {
+	background-image: url(images/about/05-restaurante-lomo_saltado.jpg);
+}
+.disfruta_menu:hover, .un_lugar:hover {
+	color: white;
+	transition: 1s;
+}
+
+.bg_reservacion{
+	padding-bottom: 15px;
+	height: 67%;
+}
+
+.txt_reservacion h2 {
+	margin-bottom: 0px;
+	font-size: 40px;
+	padding:10px;
+}
+.txt_reservacion p {
+	margin-top: 0px;
+	font-size: 20px;
+	padding:0px;
+}
+.txt_reservacion {
+	color: rgb(214, 41, 10);;
+}
+.txt_reservacion, .img_reservacion {
+	text-align: center;
+}
+.img_reservacion {
+	display: flex;
+}
+.img-reservacion-el_quinde {
+	transition: 1s;
+	background-image: url(images/sede/06-restaurante-el_quinde_zona_1.jpg);
+}
+.img-reservacion-plaza_cajamarca {
+	transition: 1s;
+	background-image: url(images/sede/06-restaurante-plaza_cajamarca_zona_1.jpg);
+}
+
+.img-reservacion-el_quinde,.img-reservacion-plaza_cajamarca {
+	width:48.3%;
+	height: 300px;
+	margin-left: 10px;
+	color: white;
+	border-radius: 10px;
+}
+.img-reservacion-el_quinde h3,.img-reservacion-plaza_cajamarca h3 {
+	font-size: 25px;
+}
+.img-reservacion-el_quinde p,.img-reservacion-plaza_cajamarca p {
+	font-size: 15px;
+}
+.img-reservacion-el_quinde h3,.img-reservacion-plaza_cajamarca h3,
+.img-reservacion-el_quinde p,.img-reservacion-plaza_cajamarca p {
+	background-color: rgba(214, 40, 10, 0.651);
+	margin: 0px; 
+	padding: 0px;
+}
+.img-reservacion-el_quinde:hover {
+	transition: 1s;
+	background-image: url(images/sede/06-restaurante-el_quinde_zona_2.jpg);
+}
+.img-reservacion-plaza_cajamarca:hover {
+	transition: 1s;
+	background-image: url(images/sede/06-restaurante-plaza_cajamarca_zona_2.jpg);
+}
+.bg_reservacion {
+	height: auto;
+	background-image: url(images/about/04-restaurante-bg_reservacion.jpg);
+	margin-bottom: 15px;
+}
+.dt_reservacion {
+	display: flex;
+	width: auto;
+	height: auto;
+}
+
+.dt_reservacion-right, .dt_reservacion-left {
+	width: 50%;
+}
+.dt_reservacion-right p, .dt_reservacion-left p {
+	padding-left: 15px;
+	font-size: 20px;
+}
+.dt_reservacion-D_cliente, .dt_reservacion-D_reserva {
+	margin-left: 20px;
+	height: 40px;
+    background-color: #ad11111f;
+    color: rgb(63, 29, 29);
+    box-shadow: inset -2px 2px 6px 2px #4d151540;
+	border-radius: 10px;
+}
+.dt_reservacion-D_cliente {
+	width: 90%;
+}
+.dt_reservacion-D_reserva {
+	width: 50%;
+}
+.boton_reserva {
+	margin-left: 290px;
+	color: white;
+	background-color: rgba(214, 40, 10);
+	padding: 10px;
+	border-radius: 5px;
+	text-decoration: none;
+	
+}
+.boton_reserva:hover {
+padding: 12px;
+}
+.servicio_unico {
+	text-align: center;
+color: rgba(214, 40, 10);
+}
+.servicio_unico img {
+	margin-bottom: 0px;
+}
+.servicio_unico h1 {
+	margin-top: 0px;
+	margin-left: 1%;
+}
+.txt_servicio_unico img {
+	margin-left: 1%;
+}
+.dt-servicio_unico {
+	display: flex;
+	color: white;
+	margin-bottom: 20px;
+}
+
+.dt-servicio_unico div {
+	border-radius: 10px;
+	margin-top: 0px;
+	background-color: rgba(214, 40, 10,0.8);
+	text-align: center;
+margin-left: 5px;
+margin-right: 5px;
+}
+.coctel, .postre {
+	margin-left: 10px;
+}
+.dt-servicio_unico h2 {
+	padding: 10px;
+	margin-top: 0px;
+	margin-bottom: 5px;
+	font-size: 30px;
+}
+.dt-servicio_unico img {
+	width: 100%;
+
+}
+/*Página Delivery / La Carta*/
+.bg_carta {
+	text-align: center;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	color: rgba(214, 40, 10);
+}
+.bg_carta h1 {
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+
+.bg_carta span{
+	font-size: 25px;
+}
+
+.bg_carta section {
+	margin-top: 10px;
+}
+
+.bg_carta section a {
+	margin-left: 8px;
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-bottom: 3px;
+	background-color: rgba(214, 40, 10, 0.6);
+	border-radius: 20px;
+	text-decoration: none;
+	color: wheat;
+	font-size: 25px;
+}
+.dt_carta h2 {
+margin-bottom: 5px;
+}
+.dt_carta div {
+	margin-top: 0px;
+}
+
+.dt_carta {
+	text-align: left;
+
+}
+.dt_carta-platos img {
+	height: 200px;
+}
+.dt_carta-platos {
+	display: flex;
+	margin-left: 10px;
+	height: 330px;
+	
+}
+.dt_carta-platos div {
+	color: white;
+	margin-left: 15px;
+	background-color: rgba(214, 40, 10,0.8);
+	border-radius: 10px;
+	width: 35%;
+}
+.dt_carta-platos img {
+	width: 100%;
+}
+.dt_carta-platos h2 {
+	margin-left: 10px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+
+.dt_carta-platos p {
+	font-size: 20px;
+	margin-top: 5px;
+	margin-bottom: 20px;
+	margin-left: 5px;	
+}
+
+.dt_carta-platos a {
+	font-size: auto;
+	margin-left: 63%;
+	margin-right: 5px;
+	padding: 10px;
+	background-color: rgb(255, 255, 255,0.6);
+	color: rgba(214, 40, 10);
+	border-radius: 10px;
+	text-decoration: none;
+}
+.dt_carta-platos a:hover {
+	font-size: 120%;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+	background-color: #eee2cb;
+}
+/* Main column */
+.main {
+  flex: 100%;
+  background-color: #f2dcb3;
+  background-size: cover;
+  width: auto;
+}
+
+.title {
+	text-align: center;
+}
+.Prf_descripcion {
+	color:rgb(78, 77, 77);
+}
+/*texto*/
+h1 {
+	font-family: Fuente-titulo;
+}
+h2 {
+	font-family: Fuente-sub_titulo;
+}
+h3,p {
+	font-family: Fuente_contenido;
+}
+a {
+	font-size: 20px;
+	font-family: Fuente_boton;
+}
+input,textarea, select {
+	font-size: 30px;
+	font-family: Fuente_formulario;
+}
+label {
+	font-family: Fuente-chk_box;
+}
+/*Fonts-family*/
+@font-face {
+	font-family: Fuente-titulo;
+	src: url(fonts/georgiai.ttf);
+}
+@font-face {
+	font-family: Fuente-sub_titulo;
+	src: url(fonts/ZillaSlab-Italic.ttf);
+}
+@font-face {
+	font-family: Fuente_contenido;
+	src: url(fonts/Averta.ttf);
+}
+@font-face {
+	font-family: Fuente_formulario;
+	src: url(fonts/garamond.ttf);
+}
+@font-face {
+	font-family: Fuente_boton;
+	src: url(fonts/Merriweather-BoldItalic.ttf);
+}
+@font-face {
+	font-family: Fuente-chk_box;
+	src: url(fonts/Merriweather.ttf);
+}
+/* Footer */
+.footer_fondo {
+  padding: 20px;
+  background-image:  url(images/footer/07-restaurante-local_quinde.jpg);
+  background-size: cover;
+  color: white;
+  width: 100%;
+  height: 400px;
+  max-height: 400px;
+}
+.footer_fondo div {
+	margin-left: 50px;
+	display:inline-block;
+	
+}
+.footer_pie {
+	padding: 20px;
+  background-image:  url(images/footer/07-rstaurante-fondo_diseño.png);
+  color: white;
+  width: 100%;
+  text-align: center;
+}
+.footer_pie a {
+	padding:25px;
+	color: white;
+	text-decoration: none;
+}
+
+@keyframes animacion-h6 {
+	0% {
+		font-size:20px;
+	}
+	50% {
+		color:#820002;
+		transform: rotateX(360deg);
+	}
+	100% {
+		font-size: 10px;
+	}
+} /*NO BORRAR LLAVE DE CIERRE DE LOS FOTOGRAMAS */
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+/*media one*/
+@media screen and (max-width: 806px) {
+	.contacto, .link_local {
+		display:flex;
+		flex-wrap: wrap;
+		width: auto;
+	}
+	.img_regiones, .txt_regiones h3 {
+		display: none;
+	}
+	.link_local a {
+		width: 50%;
+	}
+	.img-contacto-el_quinde {
+		margin-right: 5%;
+	}
+	.img-contacto-plaza_cajamarca {
+		margin-left: 5%;
+	}
+	.formulario{
+		width: 100%;
+	}
+	.input_content, textarea {
+		width: 500px;
+	}
+	.txt_regiones img {
+		margin-top: 10%;
+	}
+}
+
+/* media two*/
+@media screen and (max-width: 700px) {
+  .row, .navbar {   
+    flex-direction: column;
+  }
+  
+	form {
+		padding: 5%;
+	}
+	.header {
+		height: 300px;
+		width:auto ;
+		background-image: url(images/head/02-resturante-mesa-movile.png);
+		background-size: cover;
+	}
+	.header:hover {
+		transition: 1s;
+		background-image: url(images/head/02-restaurante-pollo_brasa-movile.png);
+	}
+	.header_img {
+		padding-top: 35px;
+	}
+	.main {
+		flex: 100%;
+		background-color: #f2dcb3;
+		width: auto;
+	  }
+	  .formulario {
+		  margin:0 0 0 5%;
+	  }
+	.contacto ul {
+		padding: 2%;
+		padding-right: 0%;
+	}
+	  .contacto, .link_local {
+		display:flex;
+		flex-wrap: wrap;
+		width: auto;
+	}
+	section a {
+		width: 100%;
+	}
+	.img-contacto-plaza_cajamarca, .img-contacto-el_quinde {
+		width: auto;
+	}
+	.input_content, select {
+		width: 100%;
+	}
+}
+
+
+
+/*sss*/
